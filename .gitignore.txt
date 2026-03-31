@@ -1,0 +1,10 @@
+.vs/
+BT/
+*.sln
+*.sln.DotSettings.user
+bin/
+obj/
+*.csproj
+.DS_Store
+.idea/
+.txt
