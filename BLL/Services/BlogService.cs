@@ -11,15 +11,13 @@ namespace BLL.Services
         public BlogService() => _db = new UnitOfWork();
         public IEnumerable<CommentDTO> GetCommentsByArticle(int articleId)
         {
-            // Отримуємо всі коментарі з бази
-            var comments = _db.Comments.GetAll()
-                .Where(c => c.ArticleId == articleId);
+            var comments = _db.Comments.GetAll().Where(c => c.ArticleId == articleId);
 
-            // Мапимо (перетворюємо) сутності DAL у DTO для виводу
             return comments.Select(c => new CommentDTO
             {
                 Id = c.Id,
                 Text = c.Text,
+                ParentId = c.ParentId, // ДОДАЙ ЦЕЙ РЯДОК!
                 AuthorName = _db.Users.Get(c.AuthorId)?.Nickname ?? "Гість"
             }).ToList();
         }
@@ -98,10 +96,52 @@ namespace BLL.Services
             });
             _db.Save();
         }
+        public void DeleteArticle(int userId, int articleId)
+        {
+            var article = _db.Articles.Get(articleId);
 
+            if (article == null)
+                throw new Exception("Статтю не знайдено.");
+
+            // ПЕРЕВІРКА ПРАВ: Тільки автор може видалити
+            if (article.AuthorId != userId)
+                throw new Exception("Ви не маєте прав для видалення цієї статті!");
+
+            _db.Articles.Delete(articleId);
+            _db.Save();
+        }
+
+        public void DeleteComment(int userId, int commentId)
+        {
+            var comment = _db.Comments.Get(commentId);
+            if (comment == null) throw new Exception("Коментар не знайдено.");
+
+            if (comment.AuthorId != userId)
+                throw new Exception("Ви можете видаляти тільки свої коментарі!");
+
+            _db.Comments.Delete(commentId);
+            _db.Save();
+        }
         public IEnumerable<CategoryDTO> GetCategories()
         {
             return _db.Categories.GetAll().Select(c => new CategoryDTO { Id = c.Id, Name = c.Name });
+        }
+        public void ReplyToComment(int userId, int articleId, int parentId, string text)
+        {
+            if (string.IsNullOrWhiteSpace(text)) throw new Exception("Текст не може бути порожнім!");
+
+            var parent = _db.Comments.Get(parentId);
+            if (parent == null) throw new Exception("Коментар для відповіді не знайдено.");
+
+            var reply = new Comment
+            {
+                AuthorId = userId,
+                ArticleId = articleId,
+                ParentId = parentId,
+                Text = text
+            };
+            _db.Comments.Create(reply);
+            _db.Save();
         }
 
         public void Dispose() => _db.Dispose();

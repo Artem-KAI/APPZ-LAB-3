@@ -19,5 +19,14 @@ namespace DAL.Repositories
         public T Get(int id) => _dbSet.Find(id)!;
 
         public void Create(T item) => _dbSet.Add(item);
+
+        public void Delete(int id)
+        {
+            T item = _db.Set<T>().Find(id);
+            if (item != null)
+            {
+                _db.Set<T>().Remove(item);
+            }
+        }
     }
 }

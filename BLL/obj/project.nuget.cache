@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5p9n+nfYyg4=",
+  "dgSpecHash": "5YZxL8v7W50=",
   "success": true,
-  "projectFilePath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

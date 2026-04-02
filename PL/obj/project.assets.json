@@ -3100,8 +3100,8 @@
     },
     "DAL/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary1/DAL.csproj",
-      "msbuildProject": "../ClassLibrary1/DAL.csproj"
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3115,11 +3115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\PL\\PL.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\PL.csproj",
       "projectName": "PL",
-      "projectPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\PL\\PL.csproj",
+      "projectPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\PL.csproj",
       "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\PL\\obj\\",
+      "outputPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3136,8 +3136,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\BLL.csproj"
+            "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj"
             }
           }
         }

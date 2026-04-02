@@ -7,5 +7,6 @@
         public int AuthorId { get; set; }
         public int ArticleId { get; set; }
         public virtual User Author { get; set; }
+        public int? ParentId { get; set; }
     }
 }

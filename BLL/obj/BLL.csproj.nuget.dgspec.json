@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\BLL.csproj": {}
+    "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\BLL.csproj": {
+    "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\DAL.csproj": {
-                "projectPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\DAL.csproj"
+              "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\DAL.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\DAL.csproj": {
+    "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\DAL.csproj",
+        "projectPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
