@@ -1,4 +1,4 @@
-﻿namespace PL
+﻿namespace PL.Menu
 {
     public static class MenuHelper
     {
@@ -30,7 +30,7 @@
 
         public static void Wait()
         {
-            Console.WriteLine("\nНатисніть будь-яку клавішу для продовження...");
+            Console.WriteLine("\nНатисніть для продовження");
             Console.ReadKey();
         }
     }

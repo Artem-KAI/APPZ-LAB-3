@@ -1,7 +1,8 @@
 ﻿using BLL.Services;
 using BLL.DTO;
+using PL.Content;
 
-namespace PL
+namespace PL.Menu
 {
     public static class MainMenu
     {
@@ -27,12 +28,22 @@ namespace PL
 
                 var choice = Console.ReadLine();
 
-                if (choice == "1") ContentManager.ShowArticlesMenu(service, user);
-                else if (choice == "2") ShowCategories(service);
-                else if (choice == "3" && user != null) CreateArticleFlow(service, user);
-                else if (choice == "4" && user != null) CreateCategoryFlow(service);
-                else if (choice == "0") break;
-                else MenuHelper.ShowError("Ця дія недоступна для гостей або невірна команда.");
+                if (choice == "1")
+                    ContentManager.ShowArticlesMenu(service, user);
+                else if (choice == "2")
+                    ShowCategories(service);
+                else if (choice == "3" && user != null)
+                    CreateArticleFlow(service, user);
+                else if (choice == "4" && user != null)
+                    CreateCategoryFlow(service);
+                else if (choice == "0")
+                    break;
+                else
+                {   
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    MenuHelper.ShowError("Ця дія недоступна для гостей або невірна команда.");
+                    Console.ResetColor();
+                }
             }
         }
 
@@ -40,10 +51,18 @@ namespace PL
         {
 
             MenuHelper.ShowHeader("Нова стаття", user.Nickname);
-            Console.Write("Заголовок: "); string t = Console.ReadLine();
-            Console.Write("Зміст: "); string c = Console.ReadLine();
+
+            Console.Write("Заголовок: "); 
+            string t = Console.ReadLine();
+
+            Console.Write("Зміст: "); 
+            string c = Console.ReadLine();
+
             service.CreateArticle(user.Id, t, c);
+
+            Console.ForegroundColor = ConsoleColor.Green;
             MenuHelper.ShowSuccess("Статтю опубліковано!");
+            Console.ResetColor();
         }
 
         static void ShowCategories(BlogService service)
@@ -60,7 +79,9 @@ namespace PL
 
             Console.Write("Назва нової рубрики: ");
             service.CreateCategory(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Green;
             MenuHelper.ShowSuccess("Рубрику додано!");
+            Console.ResetColor();
         }
     }
 }

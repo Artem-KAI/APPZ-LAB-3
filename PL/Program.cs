@@ -1,5 +1,6 @@
 ﻿using BLL.DTO;
 using BLL.Services;
+using PL.Menu;
 
 namespace PL
 {
@@ -28,24 +29,28 @@ namespace PL
                     if (choice == "1")
                     {
                         _currentUser = AuthFlow.Register(_service);
-                        if (_currentUser != null) MainMenu.Show(_service, _currentUser);
-                        _currentUser = null; // ДОДАТИ ЦЕ: щоб при виході з MainMenu акаунт "скидався"
+                        if (_currentUser != null) 
+                            MainMenu.Show(_service, _currentUser);
+                        _currentUser = null; 
                     }
                     else if (choice == "2")
                     {
                         _currentUser = AuthFlow.Login(_service);
-                        if (_currentUser != null) MainMenu.Show(_service, _currentUser);
-                        _currentUser = null; // ДОДАТИ ЦЕ
+                        if (_currentUser != null) 
+                            MainMenu.Show(_service, _currentUser);
+                        _currentUser = null;
                     }
                     else if (choice == "3")
                     {
-                        // ВХІД ЯК ГІСТЬ: передаємо null замість користувача
                         MainMenu.Show(_service, null);
                     }
                     else if (choice == "0")
                         break;
                 }
-                catch (Exception ex) { MenuHelper.ShowError(ex.Message); }
+                catch (Exception ex) 
+                { 
+                    MenuHelper.ShowError(ex.Message); 
+                }
             }
         }
     }
