@@ -30,7 +30,9 @@
 
         public static void Wait()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nНатисніть для продовження");
+            Console.ResetColor();
             Console.ReadKey();
         }
     }

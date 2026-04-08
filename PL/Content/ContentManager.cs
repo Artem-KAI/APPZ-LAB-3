@@ -34,7 +34,8 @@ namespace PL.Content
 
                 if (int.TryParse(Console.ReadLine(), out int id))
                 {
-                    if (id == 0) break;
+                    if (id == 0) 
+                        break;
 
                     var selected = articles.FirstOrDefault(x => x.Id == id);
                     if (selected != null)

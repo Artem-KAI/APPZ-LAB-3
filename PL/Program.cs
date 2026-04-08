@@ -7,7 +7,8 @@ namespace PL
 {
     class Program
     {
-        static BlogService _service = new BlogService();
+        static AuthService _authService = new AuthService();
+        static BlogService _blogService = new BlogService();
         static UserDTO? _currentUser = null;
 
         static void Main()
@@ -29,21 +30,21 @@ namespace PL
                 {
                     if (choice == "1")
                     {
-                        _currentUser = AuthFlow.Register(_service);
+                        _currentUser = AuthFlow.Register(_authService);
                         if (_currentUser != null) 
-                            MainMenu.Show(_service, _currentUser);
+                            MainMenu.Show(_blogService, _currentUser);
                         _currentUser = null; 
                     }
                     else if (choice == "2")
                     {
-                        _currentUser = AuthFlow.Login(_service);
-                        if (_currentUser != null) 
-                            MainMenu.Show(_service, _currentUser);
+                        _currentUser = AuthFlow.Login(_authService);
+                        if (_currentUser != null)
+                            MainMenu.Show(_blogService, _currentUser);
                         _currentUser = null;
                     }
                     else if (choice == "3")
                     {
-                        MainMenu.Show(_service, null);
+                        MainMenu.Show(_blogService, null);
                     }
                     else if (choice == "0")
                         break;

@@ -48,7 +48,10 @@ namespace PL.Content.Render
             else
             {
                 string hints = "[1] Коментувати | [R] Відповісти | [0] Назад";
-                if (comments.Any(c => c.AuthorName == user.Nickname)) hints += " | [X] Видалити коментар";
+                if (comments.Any(c => c.AuthorName == user.Nickname))
+                {
+                    hints += " | [X] Видалити коментар";
+                }
                 Console.WriteLine(hints);
             }
         }

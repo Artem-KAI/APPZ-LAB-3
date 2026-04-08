@@ -6,7 +6,7 @@ namespace PL.Content
 {
     public static class AuthFlow
     {
-        public static UserDTO Register(BlogService service)
+        public static UserDTO Register(AuthService service)
         {
             MenuHelper.ShowHeader("Реєстрація");
 
@@ -77,7 +77,7 @@ namespace PL.Content
             }
         }
 
-        public static UserDTO Login(BlogService service)
+        public static UserDTO Login(AuthService service)
         {
             MenuHelper.ShowHeader("Вхід");
 
