@@ -2,7 +2,7 @@
 using BLL.DTO;
 using PL.Menu;
 
-namespace PL
+namespace PL.Content
 {
     public static class AuthFlow
     {
@@ -90,9 +90,7 @@ namespace PL
             var user = service.Login(e, p);
             if (user == null)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 throw new Exception("Невірний Email або пароль!");
-                Console.ResetColor();
             }
 
             Console.ForegroundColor = ConsoleColor.Green;

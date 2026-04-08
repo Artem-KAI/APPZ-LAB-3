@@ -8,14 +8,13 @@ namespace DAL.EF
         IRepository<User> Users { get; }
         IRepository<Article> Articles { get; }
         IRepository<Comment> Comments { get; }
-        IRepository<Category> Categories { get; } // ДОДАТИ ЦЕЙ РЯДОК
+        IRepository<Category> Categories { get; }  
         void Save();
     }
 
     public class UnitOfWork : IUnitOfWork
     {
         private readonly BlogContext _db = new BlogContext();
-        // ... твої репозиторії ...
 
         public UnitOfWork()
         {

@@ -10,6 +10,7 @@ namespace DAL.EF
         public DbSet<User> Users => Set<User>();
         public DbSet<Article> Articles => Set<Article>();
         public DbSet<Comment> Comments => Set<Comment>();
+        public DbSet<Category> Categories => Set<Category>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -19,11 +20,17 @@ namespace DAL.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Налаштування зв'язків для СУБД
+            // Твій існуючий зв'язок з автором
             modelBuilder.Entity<Article>()
                 .HasOne(a => a.Author)
                 .WithMany()
                 .HasForeignKey(a => a.AuthorId);
+
+            // НОВЕ: Налаштування зв'язку Стаття -> Рубрика
+            modelBuilder.Entity<Article>()
+                .HasOne(a => a.Category)
+                .WithMany() // У однієї рубрики багато статей
+                .HasForeignKey(a => a.CategoryId);
         }
     }
 }

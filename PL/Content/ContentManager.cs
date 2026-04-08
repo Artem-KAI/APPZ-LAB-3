@@ -68,6 +68,6 @@ namespace PL.Content
 
                 continueViewing = ContentActionHandler.Handle(input, service, user, article, indexMap);
             }
-        }
+        } 
     }
 }

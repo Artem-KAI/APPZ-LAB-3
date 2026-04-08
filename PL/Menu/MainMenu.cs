@@ -31,7 +31,7 @@ namespace PL.Menu
                 if (choice == "1")
                     ContentManager.ShowArticlesMenu(service, user);
                 else if (choice == "2")
-                    ShowCategories(service);
+                    ShowCategories(service, user);
                 else if (choice == "3" && user != null)
                     CreateArticleFlow(service, user);
                 else if (choice == "4" && user != null)
@@ -49,30 +49,166 @@ namespace PL.Menu
 
         static void CreateArticleFlow(BlogService service, UserDTO user)
         {
-
             MenuHelper.ShowHeader("Нова стаття", user.Nickname);
 
-            Console.Write("Заголовок: "); 
-            string t = Console.ReadLine();
+            var categories = service.GetCategories().ToList();
+            if (!categories.Any())
+            {
+                MenuHelper.ShowError("Немає доступних рубрик. Спочатку створіть рубрику!");
+                return;
+            }
 
-            Console.Write("Зміст: "); 
-            string c = Console.ReadLine();
+            Console.WriteLine("Оберіть рубрику:");
+            for (int i = 0; i < categories.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {categories[i].Name}");
+            }
 
-            service.CreateArticle(user.Id, t, c);
+            Console.Write("\nВаш вибір (номер): ");
+            if (int.TryParse(Console.ReadLine(), out int catIdx) && catIdx > 0 && catIdx <= categories.Count)
+            {
+                var selectedCat = categories[catIdx - 1];
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            MenuHelper.ShowSuccess("Статтю опубліковано!");
-            Console.ResetColor();
+                Console.Write("Заголовок: "); string t = Console.ReadLine();
+                Console.Write("Зміст: "); string c = Console.ReadLine();
+
+                // ВИПРАВЛЕНО: передаємо selectedCat.Id
+                service.CreateArticle(user.Id, selectedCat.Id, t, c);
+
+                MenuHelper.ShowSuccess($"Статтю опубліковано в рубриці '{selectedCat.Name}'!");
+            }
+            else
+            {
+                MenuHelper.ShowError("Невірний вибір рубрики.");
+            }
         }
 
-        static void ShowCategories(BlogService service)
+        static void ShowCategories(BlogService service, UserDTO? user)
         {
+            while (true)
+            {
+                // Передаємо user у Header
+                MenuHelper.ShowHeader("Рубрики", user?.Nickname ?? "Гість");
+                var cats = service.GetCategories().ToList();
 
-            MenuHelper.ShowHeader("Рубрики");
-            var cats = service.GetCategories();
-            foreach (var c in cats) Console.WriteLine($"- {c.Name}");
-            MenuHelper.Wait();
+                if (!cats.Any())
+                {
+                    Console.WriteLine("- Рубрик поки немає");
+                    MenuHelper.Wait();
+                    break;
+                }
+
+                for (int i = 0; i < cats.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {cats[i].Name}");
+                }
+
+                Console.WriteLine("\n[ID] - Переглянути статті | [0] - Назад");
+                Console.Write("\nВаш вибір: ");
+
+                if (int.TryParse(Console.ReadLine(), out int choice))
+                {
+                    if (choice == 0) break;
+                    if (choice > 0 && choice <= cats.Count)
+                    {
+                        // Передаємо user далі
+                        ShowArticlesByCategory(service, user, cats[choice - 1]);
+                    }
+                }
+            }
         }
+
+        static void ShowArticlesByCategory(BlogService service, UserDTO? user, CategoryDTO cat)
+        {
+            while (true)
+            {
+                // Передаємо user у Header
+                MenuHelper.ShowHeader($"Статті: {cat.Name}", user?.Nickname ?? "Гість");
+
+                var articles = service.GetArticles().Where(a => a.CategoryId == cat.Id).ToList();
+
+                if (!articles.Any())
+                {
+                    Console.WriteLine("У цій рубриці ще немає статтей.");
+                    MenuHelper.Wait();
+                    break;
+                }
+
+                Console.WriteLine("{0,-5} | {1,-25} | {2,-15}", "ID", "Назва", "Автор");
+                Console.WriteLine(new string('-', 50));
+                foreach (var a in articles)
+                {
+                    Console.WriteLine("{0,-5} | {1,-25} | {2,-15}", a.Id, a.Title, a.AuthorName);
+                }
+
+                Console.WriteLine("\n[ID] - Читати статтю | [0] - Назад");
+                Console.Write("\nВаш вибір: ");
+
+                if (int.TryParse(Console.ReadLine(), out int id))
+                {
+                    if (id == 0) break;
+
+                    var selected = articles.FirstOrDefault(x => x.Id == id);
+                    if (selected != null)
+                    {
+                        // ОСЬ ТУТ ми викликаємо детальний перегляд
+                        PL.Content.ContentManager.ShowArticleDetails(service, user, selected);
+                    }
+                    else
+                    {
+                        MenuHelper.ShowError("Статтю не знайдено.");
+                    }
+                }
+            }
+        }
+
+        //static void ShowCategories(BlogService service, UserDTO? user)
+        //{
+        //    MenuHelper.ShowHeader("Рубрики");
+        //    var cats = service.GetCategories().ToList();
+
+        //    if (!cats.Any())
+        //    {
+        //        Console.WriteLine("- Рубрик поки немає");
+        //    }
+        //    else
+        //    {
+        //        for (int i = 0; i < cats.Count; i++)
+        //        {
+        //            Console.WriteLine($"{i + 1}. {cats[i].Name}");
+        //        }
+        //    }
+
+        //    Console.WriteLine("\n[ID] - Переглянути статті рубрики | [0] - Назад");
+        //    Console.Write("\nВаш вибір: ");
+
+        //    if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= cats.Count)
+        //    {
+        //        var selectedCat = cats[choice - 1];
+        //        // Викликаємо метод фільтрації
+        //        ShowArticlesByCategory(service, selectedCat);
+        //    }
+        //}
+
+        //static void ShowArticlesByCategory(BlogService service, CategoryDTO cat)
+        //{
+        //    // Отримуємо тільки статті цієї категорії
+        //    var articles = service.GetArticles().Where(a => a.CategoryId == cat.Id).ToList();
+
+        //    MenuHelper.ShowHeader($"Статті: {cat.Name}");
+        //    if (!articles.Any())
+        //    {
+        //        Console.WriteLine("У цій рубриці ще немає статтей.");
+        //    }
+        //    else
+        //    {
+        //        foreach (var a in articles)
+        //        {
+        //            Console.WriteLine($"ID: {a.Id} | {a.Title} (Автор: {a.AuthorName})");
+        //        }
+        //    }
+        //    MenuHelper.Wait();
+        //}
 
         static void CreateCategoryFlow(BlogService service)
         {

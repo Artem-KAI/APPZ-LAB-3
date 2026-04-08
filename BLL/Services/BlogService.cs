@@ -73,6 +73,7 @@ namespace BLL.Services
                 Id = a.Id,
                 Title = a.Title,
                 Content = a.Content,
+                CategoryId = a.CategoryId,
                 AuthorName = _db.Users.Get(a.AuthorId)?.Nickname ?? "Гість"
             }).ToList();
         }
@@ -105,12 +106,13 @@ namespace BLL.Services
             _db.Save();
         }
 
-        public void CreateArticle(int userId, string title, string content)
+        public void CreateArticle(int userId, int categoryId, string title, string content)
         {
             if (string.IsNullOrWhiteSpace(title)) throw new Exception("Заголовок порожній!");
             _db.Articles.Create(new Article
             {
                 AuthorId = userId,
+                CategoryId = categoryId,
                 Title = title,
                 Content = content
             });
