@@ -1,5 +1,5 @@
 ﻿using BLL.DTO;
-using DAL.EF;
+using DAL.Interfaces;
 using DAL.Entities;
 
 namespace BLL.Services
@@ -8,9 +8,9 @@ namespace BLL.Services
     {
         private readonly IUnitOfWork _db;
 
-        public AuthService()
+        public AuthService(IUnitOfWork db)
         {
-            _db = new UnitOfWork();
+            _db = db;
         }
 
         public UserDTO Register(string nick, string email, string pass, string confirm)

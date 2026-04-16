@@ -28,6 +28,29 @@ namespace PL.Content.Handler
                         HandleDeleteComment(service, user, article, indexMap);
                         return true;
 
+                    case "E":
+                        if (user != null && article.AuthorName == user.Nickname)
+                        {
+                            Console.WriteLine("\n--- Редагування статті ---");
+                            Console.WriteLine("(Залиште поле порожнім і натисніть Enter, якщо не хочете його змінювати)");
+
+                            Console.Write($"Новий заголовок ({article.Title}): ");
+                            string nTitle = Console.ReadLine() ?? "";
+
+                            Console.Write($"Новий зміст ({article.Content}): ");
+                            string nContent = Console.ReadLine() ?? "";
+
+                            service.EditArticle(user.Id, article.Id, nTitle, nContent);
+
+                            if (!string.IsNullOrWhiteSpace(nTitle)) 
+                                article.Title = nTitle;
+                            if (!string.IsNullOrWhiteSpace(nContent)) 
+                                article.Content = nContent;
+
+                            MenuHelper.ShowSuccess("Статтю успішно оновлено!");
+                        }
+                        return true;
+
                     case "D":
                         if (user != null && article.AuthorName == user.Nickname)
                         {

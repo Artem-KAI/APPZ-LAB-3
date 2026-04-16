@@ -13,6 +13,10 @@ namespace PL.Content.Render
 
             if (user != null && article.AuthorName == user.Nickname)
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("[E] - РЕДАГУВАТИ СТАТТЮ");
+                Console.ResetColor();
+
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("[D] - ВИДАЛИТИ ЦЮ СТАТТЮ");
                 Console.ResetColor();

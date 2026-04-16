@@ -72,7 +72,7 @@ namespace PL.Content
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Помилка реєстрації: {ex.Message}");
+                MenuHelper.ShowError($"Помилка реєстрації: {ex.Message}");
                 return null;
             }
         }

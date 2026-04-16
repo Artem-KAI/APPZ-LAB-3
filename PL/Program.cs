@@ -1,4 +1,6 @@
-﻿using BLL.DTO;
+﻿using Microsoft.EntityFrameworkCore; 
+using DAL.EF;
+using BLL.DTO;
 using BLL.Services;
 using PL.Content;
 using PL.Menu;
@@ -7,14 +9,25 @@ namespace PL
 {
     class Program
     {
-        static AuthService _authService = new AuthService();
-        static BlogService _blogService = new BlogService();
+        static AuthService _authService;
+        static BlogService _blogService;
         static UserDTO? _currentUser = null;
 
         static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.UTF8;
+
+            var options = new DbContextOptionsBuilder<BlogContext>().UseSqlite("Data Source=blog_system.db").Options;
+
+            var dbContext = new BlogContext(options);
+            dbContext.Database.EnsureCreated();
+
+            var uow = new UnitOfWork(dbContext);
+
+            _authService = new AuthService(uow);
+            _blogService = new BlogService(uow);
+
 
             while (true)
             {

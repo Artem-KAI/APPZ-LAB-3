@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\content\\authflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\content\\contentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\content\\contentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\content\\handler\\contentactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\content\\handler\\contentactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\content\\render\\articleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\content\\render\\articleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,80 +35,68 @@
       "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\content\\render\\commentui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\ef\\blogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\blogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\menu\\menuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\menu\\menuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\ef\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\ef\\blogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\blogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\dto\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\menu\\menuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\menu\\menuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\content\\handler\\contentactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\content\\handler\\contentactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\content\\contentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|solutionrelative:pl\\content\\contentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\dto\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\dto\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\dal\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12357D34-2A02-1ECD-BC6C-D84ADDC1A72E}|DAL\\DAL.csproj|solutionrelative:dal\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79423377-CBA3-4C85-8972-9AED06DF25AE}|PL\\PL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\pl\\pl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -97,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\bll.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\bll.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|c:\\users\\artem\\source\\repos\\appz-lab-3\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0AFE53F5-14F9-4BEC-AB21-75DD4A5E8889}|BLL\\BLL.csproj|solutionrelative:bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\EF\\UnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -134,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,106 +146,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Program.cs",
-              "RelativeDocumentMoniker": "PL\\Program.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Program.cs",
-              "RelativeToolTip": "PL\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T07:20:52.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTO\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\UserDTO.cs",
-              "RelativeToolTip": "BLL\\DTO\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T07:41:56.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CommentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\CommentDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTO\\CommentDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\CommentDTO.cs",
-              "RelativeToolTip": "BLL\\DTO\\CommentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T16:41:25.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\AuthService.cs",
-              "RelativeToolTip": "BLL\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T09:05:17.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BlogContext.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\EF\\BlogContext.cs",
-              "RelativeDocumentMoniker": "DAL\\EF\\BlogContext.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\EF\\BlogContext.cs",
-              "RelativeToolTip": "DAL\\EF\\BlogContext.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:09:48.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\IRepository.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "DAL\\Repositories\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T14:40:24.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CommentUI.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\CommentUI.cs",
-              "RelativeDocumentMoniker": "PL\\Content\\Render\\CommentUI.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\CommentUI.cs*",
-              "RelativeToolTip": "PL\\Content\\Render\\CommentUI.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADUAAAARAAAAAAAAAA==",
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MainMenu.cs",
+              "RelativeDocumentMoniker": "PL\\Menu\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MainMenu.cs",
+              "RelativeToolTip": "PL\\Menu\\MainMenu.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wEoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:23:01.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T16:25:25.802Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ArticleUI.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\ArticleUI.cs",
-              "RelativeDocumentMoniker": "PL\\Content\\Render\\ArticleUI.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\ArticleUI.cs",
-              "RelativeToolTip": "PL\\Content\\Render\\ArticleUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ContentManager.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\ContentManager.cs",
+              "RelativeDocumentMoniker": "PL\\Content\\ContentManager.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\ContentManager.cs",
+              "RelativeToolTip": "PL\\Content\\ContentManager.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:22:23.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T08:06:35.992Z"
             },
             {
               "$type": "Document",
@@ -251,60 +176,194 @@
               "RelativeDocumentMoniker": "PL\\Content\\AuthFlow.cs",
               "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\AuthFlow.cs",
               "RelativeToolTip": "PL\\Content\\AuthFlow.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T16:25:46.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
+              "Title": "CommentUI.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\CommentUI.cs",
+              "RelativeDocumentMoniker": "PL\\Content\\Render\\CommentUI.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\CommentUI.cs",
+              "RelativeToolTip": "PL\\Content\\Render\\CommentUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T16:23:01.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArticleUI.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\ArticleUI.cs",
+              "RelativeDocumentMoniker": "PL\\Content\\Render\\ArticleUI.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Render\\ArticleUI.cs",
+              "RelativeToolTip": "PL\\Content\\Render\\ArticleUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T16:22:23.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ContentActionHandler.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Handler\\ContentActionHandler.cs",
               "RelativeDocumentMoniker": "PL\\Content\\Handler\\ContentActionHandler.cs",
               "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\Handler\\ContentActionHandler.cs",
               "RelativeToolTip": "PL\\Content\\Handler\\ContentActionHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwFgAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T16:23:49.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BlogService.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\BlogService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\BlogService.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\BlogService.cs",
-              "RelativeToolTip": "BLL\\Services\\BlogService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T07:26:14.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "DocumentIndex": 3,
+              "Title": "BLL.csproj",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
+              "RelativeDocumentMoniker": "BLL\\BLL.csproj",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
+              "RelativeToolTip": "BLL\\BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-02T14:44:16.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "MenuHelper.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MenuHelper.cs",
+              "RelativeDocumentMoniker": "PL\\Menu\\MenuHelper.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MenuHelper.cs",
+              "RelativeToolTip": "PL\\Menu\\MenuHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T08:06:19.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Program.cs",
+              "RelativeDocumentMoniker": "PL\\Program.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Program.cs",
+              "RelativeToolTip": "PL\\Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T07:20:52.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\EF\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "DAL\\EF\\UnitOfWork.cs",
               "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\EF\\UnitOfWork.cs",
               "RelativeToolTip": "DAL\\EF\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:03:26.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:03:26.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "BlogContext.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\EF\\BlogContext.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\BlogContext.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\EF\\BlogContext.cs",
+              "RelativeToolTip": "DAL\\EF\\BlogContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T15:09:48.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BlogService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\BlogService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\BlogService.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\BlogService.cs",
+              "RelativeToolTip": "BLL\\Services\\BlogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T07:26:14.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "BLL\\DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T07:41:56.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\Services\\AuthService.cs",
+              "RelativeToolTip": "BLL\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T09:05:17.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EFRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Repositories\\EFRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\EFRepository.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Repositories\\EFRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\EFRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T14:40:35.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T14:40:24.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T17:33:17.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CommentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\CommentDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTO\\CommentDTO.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\CommentDTO.cs",
+              "RelativeToolTip": "BLL\\DTO\\CommentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T16:41:25.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "BLL\\DTO\\CategoryDTO.cs",
@@ -312,32 +371,7 @@
               "RelativeToolTip": "BLL\\DTO\\CategoryDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T16:30:54.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MenuHelper.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MenuHelper.cs",
-              "RelativeDocumentMoniker": "PL\\Menu\\MenuHelper.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MenuHelper.cs",
-              "RelativeToolTip": "PL\\Menu\\MenuHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T08:06:19.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MainMenu.cs",
-              "RelativeDocumentMoniker": "PL\\Menu\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Menu\\MainMenu.cs",
-              "RelativeToolTip": "PL\\Menu\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T16:25:25.802Z"
+              "WhenOpened": "2026-03-31T16:30:54.801Z"
             },
             {
               "$type": "Document",
@@ -347,49 +381,13 @@
               "RelativeDocumentMoniker": "BLL\\DTO\\ArticleDTO.cs",
               "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\DTO\\ArticleDTO.cs",
               "RelativeToolTip": "BLL\\DTO\\ArticleDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T07:20:44.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ContentManager.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\ContentManager.cs",
-              "RelativeDocumentMoniker": "PL\\Content\\ContentManager.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\Content\\ContentManager.cs",
-              "RelativeToolTip": "PL\\Content\\ContentManager.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAADwvy4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T08:06:35.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EFRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Repositories\\EFRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\EFRepository.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Repositories\\EFRepository.cs",
-              "RelativeToolTip": "DAL\\Repositories\\EFRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T14:40:35.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "DAL\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Category.cs",
-              "RelativeToolTip": "DAL\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T15:56:43.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\User.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\User.cs",
@@ -398,30 +396,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T15:56:39.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Article.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Article.cs",
-              "RelativeDocumentMoniker": "DAL\\Entities\\Article.cs",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Article.cs",
-              "RelativeToolTip": "DAL\\Entities\\Article.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T15:54:09.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BLL.csproj",
-              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
-              "RelativeDocumentMoniker": "BLL\\BLL.csproj",
-              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
-              "RelativeToolTip": "BLL\\BLL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-02T14:44:16.126Z"
             },
             {
               "$type": "Document",
@@ -438,6 +412,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "DAL\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Category.cs",
+              "RelativeToolTip": "DAL\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T15:56:43.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Article.cs",
+              "RelativeDocumentMoniker": "DAL\\Entities\\Article.cs",
+              "ToolTip": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\DAL\\Entities\\Article.cs",
+              "RelativeToolTip": "DAL\\Entities\\Article.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T15:54:09.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "PL.csproj",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\PL.csproj",
               "RelativeDocumentMoniker": "PL\\PL.csproj",
@@ -449,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "BLL",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj",
               "RelativeDocumentMoniker": "BLL\\BLL.csproj",
@@ -460,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\EF\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\EF\\UnitOfWork.cs",
@@ -472,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "EFRepository.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\Repositories\\EFRepository.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\Repositories\\EFRepository.cs",
@@ -484,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "BlogContext.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\EF\\BlogContext.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\EF\\BlogContext.cs",
@@ -496,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\Repositories\\IRepository.cs",
@@ -508,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\Entities\\User.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\Entities\\User.cs",
@@ -520,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\Entities\\Comment.cs",
@@ -532,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Article.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\Entities\\Article.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\Entities\\Article.cs",
@@ -544,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\artem\\source\\repos\\ClassLibrary1\\ClassLibrary1\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "..\\ClassLibrary1\\ClassLibrary1\\Entities\\Category.cs",
@@ -553,6 +551,14 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T07:22:11.143Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

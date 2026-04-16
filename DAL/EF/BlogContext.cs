@@ -11,10 +11,7 @@ namespace DAL.EF
         public DbSet<Comment> Comments => Set<Comment>();
         public DbSet<Category> Categories => Set<Category>();
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        { 
-            optionsBuilder.UseSqlite("Data Source=blog_system.db");
-        }
+        public BlogContext(DbContextOptions<BlogContext> options) : base(options){}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         { 
@@ -26,7 +23,8 @@ namespace DAL.EF
             modelBuilder.Entity<Article>()
                 .HasOne(a => a.Category)
                 .WithMany() 
-                .HasForeignKey(a => a.CategoryId);
+                .HasForeignKey(a => a.CategoryId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

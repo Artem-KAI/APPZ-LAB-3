@@ -103,13 +103,51 @@ namespace PL.Menu
                     Console.WriteLine($"{i + 1}. {cats[i].Name}");
                 }
 
-                Console.WriteLine("\n[ID] - Переглянути статті | [0] - Назад");
+                Console.WriteLine("\n[ID] - Переглянути статті");
+
+                if (user != null)
+                {
+                    Console.WriteLine("[D + ID] - Видалити рубрику (наприклад: d1)");
+                }
+
+                Console.WriteLine("[0] - Назад");
                 Console.Write("\nВаш вибір: ");
 
-                if (int.TryParse(Console.ReadLine(), out int choice))
+                string input = Console.ReadLine()?.Trim().ToLower() ?? "";
+
+                if (input == "0") 
+                    break;
+
+                if (input.StartsWith("d") && user != null)
                 {
-                    if (choice == 0) 
-                        break;
+                    if (int.TryParse(input.Substring(1), out int deleteIndex) && deleteIndex > 0 && deleteIndex <= cats.Count)
+                    {
+                        var catToDelete = cats[deleteIndex - 1];
+                        try
+                        {
+                            service.DeleteCategory(catToDelete.Id);
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine($"\nРубрику '{catToDelete.Name}' успішно видалено!");
+                            Console.ResetColor();
+                            MenuHelper.Wait();
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            MenuHelper.ShowError(ex.Message);
+                            Console.ResetColor();
+                        } 
+                    }
+                    else
+                    {
+                        MenuHelper.ShowError("Невірний формат. Введіть d та номер (наприклад, d1).");
+                    }
+                        
+                    continue; 
+                }
+
+                if (int.TryParse(input, out int choice))
+                {
                     if (choice > 0 && choice <= cats.Count)
                     {
                         ShowArticlesByCategory(service, user, cats[choice - 1]);

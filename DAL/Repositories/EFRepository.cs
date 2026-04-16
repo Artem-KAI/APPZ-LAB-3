@@ -1,4 +1,5 @@
 ﻿using DAL.EF;
+using DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repositories
@@ -14,11 +15,25 @@ namespace DAL.Repositories
             _dbSet = context.Set<T>();
         }
 
-        public IEnumerable<T> GetAll() => _dbSet.AsNoTracking().ToList();
+        public IEnumerable<T> GetAll()
+        {
+            return _dbSet.AsNoTracking().ToList();
+        }
 
-        public T Get(int id) => _dbSet.Find(id)!;
+        public T Get(int id)
+        {
+            var item = _dbSet.Find(id);
+            return item!;
+        }
 
-        public void Create(T item) => _dbSet.Add(item);
+        public void Create(T item)
+        {
+            _dbSet.Add(item);
+        }
+        public void Update(T item)
+        {
+            _dbSet.Update(item);
+        }
 
         public void Delete(int id)
         {
@@ -31,14 +46,5 @@ namespace DAL.Repositories
 
             _dbSet.Remove(item);
         }
-
-        //public void Delete(int id)
-        //{
-        //    T item = _db.Set<T>().Find(id);
-        //    if (item != null)
-        //    {
-        //        _db.Set<T>().Remove(item);
-        //    }
-        //}
     }
 }
