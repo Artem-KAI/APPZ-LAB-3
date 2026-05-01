@@ -3106,7 +3106,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "BLL >= 1.0.0"
+      "BLL >= 1.0.0",
+      "DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3115,11 +3116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\PL.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\source\\repos\\Artem\\APPZ\\APPZ-LAB-3\\PL\\PL.csproj",
       "projectName": "PL",
-      "projectPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\PL.csproj",
+      "projectPath": "C:\\Users\\artem\\source\\repos\\Artem\\APPZ\\APPZ-LAB-3\\PL\\PL.csproj",
       "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\PL\\obj\\",
+      "outputPath": "C:\\Users\\artem\\source\\repos\\Artem\\APPZ\\APPZ-LAB-3\\PL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3138,6 +3139,12 @@
           "projectReferences": {
             "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj": {
               "projectPath": "C:\\Users\\artem\\source\\repos\\APPZ-LAB-3\\BLL\\BLL.csproj"
+            },
+            "C:\\Users\\artem\\source\\repos\\Artem\\APPZ\\APPZ-LAB-3\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\Artem\\APPZ\\APPZ-LAB-3\\BLL\\BLL.csproj"
+            },
+            "C:\\Users\\artem\\source\\repos\\Artem\\APPZ\\APPZ-LAB-3\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\Artem\\APPZ\\APPZ-LAB-3\\DAL\\DAL.csproj"
             }
           }
         }

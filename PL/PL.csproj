@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\DAL\DAL.csproj" />
     <ProjectReference Include="C:\Users\artem\source\repos\APPZ-LAB-3\BLL\BLL.csproj" />
   </ItemGroup>
 

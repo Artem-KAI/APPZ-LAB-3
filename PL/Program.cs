@@ -9,7 +9,7 @@ namespace PL
 {
     class Program
     {
-        static AuthService _authService;
+        static AuthService _authService; 
         static BlogService _blogService;
         static UserDTO? _currentUser = null;
 
