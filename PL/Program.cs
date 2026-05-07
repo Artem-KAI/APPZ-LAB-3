@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore; 
+﻿using Microsoft.EntityFrameworkCore;
 using DAL.EF;
 using BLL.DTO;
+using BLL.Interfaces;
 using BLL.Services;
 using PL.Content;
 using PL.Menu;
@@ -9,8 +10,8 @@ namespace PL
 {
     class Program
     {
-        static AuthService _authService; 
-        static BlogService _blogService;
+        static IAuthService _authService;
+        static IBlogService _blogService;
         static UserDTO? _currentUser = null;
 
         static void Main()
@@ -21,7 +22,7 @@ namespace PL
             var options = new DbContextOptionsBuilder<BlogContext>().UseSqlite("Data Source=blog_system.db").Options;
 
             var dbContext = new BlogContext(options);
-            dbContext.Database.EnsureCreated();
+            // dbContext.Database.EnsureCreated();
 
             var uow = new UnitOfWork(dbContext);
 
@@ -44,9 +45,9 @@ namespace PL
                     if (choice == "1")
                     {
                         _currentUser = AuthFlow.Register(_authService);
-                        if (_currentUser != null) 
+                        if (_currentUser != null)
                             MainMenu.Show(_blogService, _currentUser);
-                        _currentUser = null; 
+                        _currentUser = null;
                     }
                     else if (choice == "2")
                     {
@@ -62,11 +63,12 @@ namespace PL
                     else if (choice == "0")
                         break;
                 }
-                catch (Exception ex) 
-                { 
-                    MenuHelper.ShowError(ex.Message); 
+                catch (Exception ex)
+                {
+                    MenuHelper.ShowError(ex.Message);
                 }
             }
         }
     }
 }
+ 

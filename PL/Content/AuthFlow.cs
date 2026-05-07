@@ -1,4 +1,4 @@
-﻿using BLL.Services;
+﻿using BLL.Interfaces;
 using BLL.DTO;
 using PL.Menu;
 
@@ -6,7 +6,7 @@ namespace PL.Content
 {
     public static class AuthFlow
     {
-        public static UserDTO Register(AuthService service)
+        public static UserDTO Register(IAuthService service)
         {
             MenuHelper.ShowHeader("Реєстрація");
 
@@ -17,7 +17,7 @@ namespace PL.Content
                 Console.Write("Nickname: ");
                 n = Console.ReadLine();
 
-                if (!string.IsNullOrWhiteSpace(n) && n.Length >= 3) 
+                if (!string.IsNullOrWhiteSpace(n) && n.Length >= 3)
                     break;
 
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -30,7 +30,7 @@ namespace PL.Content
                 Console.Write("Email: ");
                 e = Console.ReadLine();
 
-                if (!string.IsNullOrWhiteSpace(e) && e.Contains("@") && e.Contains(".")) 
+                if (!string.IsNullOrWhiteSpace(e) && e.Contains("@") && e.Contains("."))
                     break;
 
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -43,7 +43,7 @@ namespace PL.Content
                 Console.Write("Пароль: ");
                 p1 = Console.ReadLine();
 
-                if (!string.IsNullOrWhiteSpace(p1) && p1.Length >= 6) 
+                if (!string.IsNullOrWhiteSpace(p1) && p1.Length >= 6)
                     break;
 
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -56,7 +56,7 @@ namespace PL.Content
                 Console.Write("Повтор пароля: ");
                 p2 = Console.ReadLine();
 
-                if (p1 == p2) 
+                if (p1 == p2)
                     break;
 
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -65,7 +65,7 @@ namespace PL.Content
             }
 
             try
-            {         
+            {
                 var user = service.Register(n, e, p1, p2);
                 MenuHelper.ShowSuccess("Акаунт створено!");
                 return user;
@@ -77,14 +77,14 @@ namespace PL.Content
             }
         }
 
-        public static UserDTO Login(AuthService service)
+        public static UserDTO Login(IAuthService service)
         {
             MenuHelper.ShowHeader("Вхід");
 
-            Console.Write("Email: "); 
+            Console.Write("Email: ");
             string e = Console.ReadLine();
 
-            Console.Write("Пароль: "); 
+            Console.Write("Пароль: ");
             string p = Console.ReadLine();
 
             var user = service.Login(e, p);
@@ -99,4 +99,4 @@ namespace PL.Content
             return user;
         }
     }
-}
+} 

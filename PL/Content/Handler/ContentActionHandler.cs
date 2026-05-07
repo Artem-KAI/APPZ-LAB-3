@@ -1,12 +1,12 @@
 ﻿using BLL.DTO;
-using BLL.Services;
+using BLL.Interfaces;
 using PL.Menu;
 
 namespace PL.Content.Handler
 {
     public static class ContentActionHandler
     {
-        public static bool Handle(string input, BlogService service, UserDTO? user, ArticleDTO article, Dictionary<string, int> indexMap)
+        public static bool Handle(string input, IBlogService service, UserDTO? user, ArticleDTO article, Dictionary<string, int> indexMap)
         {
             try
             {
@@ -42,9 +42,9 @@ namespace PL.Content.Handler
 
                             service.EditArticle(user.Id, article.Id, nTitle, nContent);
 
-                            if (!string.IsNullOrWhiteSpace(nTitle)) 
+                            if (!string.IsNullOrWhiteSpace(nTitle))
                                 article.Title = nTitle;
-                            if (!string.IsNullOrWhiteSpace(nContent)) 
+                            if (!string.IsNullOrWhiteSpace(nContent))
                                 article.Content = nContent;
 
                             MenuHelper.ShowSuccess("Статтю успішно оновлено!");
@@ -74,7 +74,7 @@ namespace PL.Content.Handler
             return true;
         }
 
-        private static void HandleReply(BlogService service, UserDTO user, ArticleDTO article, Dictionary<string, int> indexMap)
+        private static void HandleReply(IBlogService service, UserDTO user, ArticleDTO article, Dictionary<string, int> indexMap)
         {
             Console.Write("Введіть номер коментаря (напр. 1 або 2.1): ");
             string idx = Console.ReadLine();
@@ -86,7 +86,7 @@ namespace PL.Content.Handler
             }
         }
 
-        private static void HandleDeleteComment(BlogService service, UserDTO user, ArticleDTO article, Dictionary<string, int> indexMap)
+        private static void HandleDeleteComment(IBlogService service, UserDTO user, ArticleDTO article, Dictionary<string, int> indexMap)
         {
             Console.Write("Введіть номер вашого коментаря для видалення: ");
             string idx = Console.ReadLine();
@@ -98,3 +98,4 @@ namespace PL.Content.Handler
         }
     }
 }
+ 

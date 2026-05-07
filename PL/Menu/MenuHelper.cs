@@ -2,8 +2,9 @@
 {
     public static class MenuHelper
     {
-        public static void ShowHeader(string title, string user = "Гість")
+        public static void ShowHeader(string title, string? user = "Гість")
         {
+            user ??= "Гість";
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("====================================================");

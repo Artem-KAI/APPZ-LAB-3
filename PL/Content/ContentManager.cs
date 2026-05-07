@@ -1,5 +1,5 @@
 ﻿using BLL.DTO;
-using BLL.Services;
+using BLL.Interfaces;
 using PL.Content.Handler;
 using PL.Content.Render;
 using PL.Menu;
@@ -8,7 +8,7 @@ namespace PL.Content
 {
     public static class ContentManager
     {
-        public static void ShowArticlesMenu(BlogService service, UserDTO user)
+        public static void ShowArticlesMenu(IBlogService service, UserDTO user)
         {
             while (true)
             {
@@ -34,7 +34,7 @@ namespace PL.Content
 
                 if (int.TryParse(Console.ReadLine(), out int id))
                 {
-                    if (id == 0) 
+                    if (id == 0)
                         break;
 
                     var selected = articles.FirstOrDefault(x => x.Id == id);
@@ -52,7 +52,7 @@ namespace PL.Content
             }
         }
 
-        public static void ShowArticleDetails(BlogService service, UserDTO? user, ArticleDTO article)
+        public static void ShowArticleDetails(IBlogService service, UserDTO? user, ArticleDTO article)
         {
             bool continueViewing = true;
             while (continueViewing)
@@ -69,6 +69,6 @@ namespace PL.Content
 
                 continueViewing = ContentActionHandler.Handle(input, service, user, article, indexMap);
             }
-        } 
+        }
     }
-}
+} 

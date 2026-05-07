@@ -1,10 +1,13 @@
 ﻿using BLL.DTO;
-using DAL.Interfaces;
+using BLL.Interfaces;
 using DAL.Entities;
+using DAL.Interfaces;
+using System;
+using System.Linq;
 
 namespace BLL.Services
 {
-    public class AuthService : IDisposable
+    public class AuthService : IAuthService
     {
         private readonly IUnitOfWork _db;
 
@@ -14,56 +17,61 @@ namespace BLL.Services
         }
 
         public UserDTO Register(string nick, string email, string pass, string confirm)
-        {
-            if (pass != confirm) 
-                throw new Exception("Паролі не збігаються!");
+        { 
+            if (pass != confirm)
+            {
+                throw new ArgumentException("Паролі не збігаються!");
+            }
+             
+            var allUsers = _db.Users.GetAll();
+            bool userAlreadyExists = allUsers.Any(u => u.Email == email);
 
-            if (_db.Users.GetAll().Any(u => u.Email == email))
-                throw new Exception("Користувач з таким Email вже існує!");
-
-            var user = new User 
-            { 
-                Nickname = nick, 
-                Email = email, 
-                Password = pass 
+            if (userAlreadyExists)
+            {
+                throw new InvalidOperationException("Користувач з таким Email вже існує!");
+            }
+             
+            var newUser = new User
+            {
+                Nickname = nick,
+                Email = email,
+                Password = pass
             };
-
-            _db.Users.Create(user);
+             
+            _db.Users.Create(newUser);
             _db.Save();
-
-            return MapToDTO(user);
+             
+            var userDto = MapToDTO(newUser);
+            return userDto;
         }
 
         public UserDTO? Login(string email, string pass)
-        {
-            User user = null;
-            foreach (var u in _db.Users.GetAll())
-            {
-                if (u.Email == email && u.Password == pass)
-                {
-                    user = u;
-                    break;
-                }
-            }
-
-            if (user == null)
-            {
-                return null;
+        { 
+            var allUsers = _db.Users.GetAll();
+             
+            var user = allUsers.FirstOrDefault(u => u.Email == email && u.Password == pass);
+             
+            if (user != null)
+            { 
+                var userDto = MapToDTO(user);
+                return userDto;
             }
             else
-            {
-                return MapToDTO(user);
+            { 
+                return null;
             }
         }
-
-        private UserDTO MapToDTO(User user)
+         
+        private static UserDTO MapToDTO(User user)
         {
-            return new UserDTO 
+            var dto = new UserDTO
             {
-                Id = user.Id, 
-                Nickname = user.Nickname, 
-                Email = user.Email 
+                Id = user.Id,
+                Nickname = user.Nickname,
+                Email = user.Email
             };
+
+            return dto;
         }
 
         public void Dispose()

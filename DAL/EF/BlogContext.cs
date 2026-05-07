@@ -21,8 +21,8 @@ namespace DAL.EF
                 .HasForeignKey(a => a.AuthorId);
              
             modelBuilder.Entity<Article>()
-                .HasOne(a => a.Category)
-                .WithMany() 
+                .HasOne(a => a.Category) 
+                .WithMany(c => c.Articles) 
                 .HasForeignKey(a => a.CategoryId)
                 .OnDelete(DeleteBehavior.Restrict);
         }

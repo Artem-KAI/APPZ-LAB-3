@@ -1,4 +1,4 @@
-﻿using BLL.Services;
+﻿using BLL.Interfaces;
 using BLL.DTO;
 using PL.Content;
 
@@ -6,7 +6,7 @@ namespace PL.Menu
 {
     public static class MainMenu
     {
-        public static void Show(BlogService service, UserDTO? user)
+        public static void Show(IBlogService service, UserDTO? user)
         {
             while (true)
             {
@@ -38,7 +38,7 @@ namespace PL.Menu
                 else if (choice == "0")
                     break;
                 else
-                {   
+                {
                     Console.ForegroundColor = ConsoleColor.Red;
                     MenuHelper.ShowError("Ця дія недоступна для гостей або невірна команда.");
                     Console.ResetColor();
@@ -46,7 +46,7 @@ namespace PL.Menu
             }
         }
 
-        static void CreateArticleFlow(BlogService service, UserDTO user)
+        static void CreateArticleFlow(IBlogService service, UserDTO user)
         {
             MenuHelper.ShowHeader("Нова стаття", user.Nickname);
 
@@ -71,7 +71,7 @@ namespace PL.Menu
                 Console.Write("Заголовок: ");
                 string t = Console.ReadLine();
 
-                Console.Write("Зміст: "); 
+                Console.Write("Зміст: ");
                 string c = Console.ReadLine();
 
                 service.CreateArticle(user.Id, selectedCat.Id, t, c);
@@ -84,7 +84,7 @@ namespace PL.Menu
             }
         }
 
-        static void ShowCategories(BlogService service, UserDTO? user)
+        static void ShowCategories(IBlogService service, UserDTO? user)
         {
             while (true)
             {
@@ -115,7 +115,7 @@ namespace PL.Menu
 
                 string input = Console.ReadLine()?.Trim().ToLower() ?? "";
 
-                if (input == "0") 
+                if (input == "0")
                     break;
 
                 if (input.StartsWith("d") && user != null)
@@ -136,14 +136,14 @@ namespace PL.Menu
                             Console.ForegroundColor = ConsoleColor.Red;
                             MenuHelper.ShowError(ex.Message);
                             Console.ResetColor();
-                        } 
+                        }
                     }
                     else
                     {
                         MenuHelper.ShowError("Невірний формат. Введіть d та номер (наприклад, d1).");
                     }
-                        
-                    continue; 
+
+                    continue;
                 }
 
                 if (int.TryParse(input, out int choice))
@@ -156,7 +156,7 @@ namespace PL.Menu
             }
         }
 
-        static void ShowArticlesByCategory(BlogService service, UserDTO? user, CategoryDTO cat)
+        static void ShowArticlesByCategory(IBlogService service, UserDTO? user, CategoryDTO cat)
         {
             while (true)
             {
@@ -183,7 +183,7 @@ namespace PL.Menu
 
                 if (int.TryParse(Console.ReadLine(), out int id))
                 {
-                    if (id == 0) 
+                    if (id == 0)
                         break;
 
                     var selected = articles.FirstOrDefault(x => x.Id == id);
@@ -199,17 +199,17 @@ namespace PL.Menu
             }
         }
 
-        static void CreateCategoryFlow(BlogService service)
+        static void CreateCategoryFlow(IBlogService service)
         {
-            while (true) 
+            while (true)
             {
                 try
                 {
                     Console.Write("Назва нової рубрики (або 0 для скасування): ");
                     string name = Console.ReadLine();
 
-                    if (name == "0") 
-                        break; 
+                    if (name == "0")
+                        break;
 
                     service.CreateCategory(name);
 
@@ -223,4 +223,4 @@ namespace PL.Menu
             }
         }
     }
-}
+} 
